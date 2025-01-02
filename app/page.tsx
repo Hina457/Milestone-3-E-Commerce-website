@@ -1,101 +1,55 @@
-import Image from "next/image";
 
-export default function Home() {
+
+
+// import Link from "next/link"
+// export default function Main(){
+//   return(
+//     <div>
+//      <div className="w-full h-[600px] opacity-85 bg-black  bg-cover bg-center bg-[url('/shoppingbg.jpg')]">
+     
+//      <h1 className="flex justify-center items-center text-5xl font-serif font-bold pt-36 text-pink-500">WelCome tO Alvi Shop</h1>
+//      <div className="flex justify-center items-center ">
+//      <p className=" w-[550px] text-white">I am thrilled to announce the opening of my online store, Alvi Store! This platform is designed to offer customers a seamless shopping experience, featuring a diverse range of high-quality products that cater to all your needs. At Alvi Store, we prioritize customer satisfaction by ensuring competitive prices, fast delivery, and exceptional service</p>
+//      </div>
+//      <div className="flex justify-center items-center ">
+//      <Link href={"/Products"}><button className="w-[200px] h-[60px] hover:bg-pink-500 mt-7 bg-pink-700 rounded-lg text-white font-serif ">Explore Products</button></Link>
+//       </div>
+//      </div>
+//      </div>
+    
+//   )
+// }
+
+
+
+
+import Link from "next/link";
+
+export default function Main() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div>
+      <div className="w-full h-[600px] bg-black bg-cover bg-center bg-[url('/shoppingbg.jpg')] opacity-85">
+        {/* Heading */}
+        <h1 className="flex justify-center items-center text-3xl sm:text-4xl md:text-5xl font-serif font-bold pt-20 sm:pt-28 md:pt-36 text-pink-500 text-center px-4">
+          WelCome tO Alvi Shop
+        </h1>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        {/* Paragraph */}
+        <div className="flex justify-center items-center px-4">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white text-center w-full max-w-[550px]">
+            I am thrilled to announce the opening of my online store, Alvi Store! This platform is designed to offer customers a seamless shopping experience, featuring a diverse range of high-quality products that cater to all your needs. At Alvi Store, we prioritize customer satisfaction by ensuring competitive prices, fast delivery, and exceptional service.
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        {/* Button */}
+        <div className="flex justify-center items-center mt-5 sm:mt-7">
+          <Link href={"/Products"}>
+            <button className="w-[150px] sm:w-[180px] md:w-[200px] h-[50px] sm:h-[55px] md:h-[60px] bg-pink-700 hover:bg-pink-500 rounded-lg text-white font-serif text-sm sm:text-base md:text-lg">
+              Explore Products
+            </button>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
