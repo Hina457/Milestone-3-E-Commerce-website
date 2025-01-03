@@ -6,13 +6,16 @@
 "use client"
 import { useEffect, useState } from "react";
 import Image from "next/image";
-
+import Button from "@/components/button";
+import { FaStar} from "react-icons/fa6";
+import Link from "next/link";
 
 
 
 
 
 interface products{
+  
   id:string;
   title:string;
   price:number;
@@ -21,6 +24,7 @@ interface products{
   rating:{
     rate:number;
     count:number;
+    button:string
   };
 }
 
@@ -45,8 +49,10 @@ const Productpage = () =>{
 
   return(
    <div>
-    
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 px-6 bg-black pb-11 ">
+     <h1 className="text-center text-5xl font-bold mt-3 font-serif">Our Products</h1>
+   
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 px-6 bg-[url('/bg2.webp')]  pb-11 ">
+   
    
   {products.map((item, index) => (
         
@@ -73,8 +79,21 @@ const Productpage = () =>{
         <p className="font-semibold">Rating:</p>
         <p className="font-normal">{item.rating.rate}</p>
         <p className="text-gray-500">(Count: {item.rating.count})</p>
+       
+        
       </div>
-     
+      <div className="flex gap-2 text-yellow-300">
+        <FaStar />
+        <FaStar />
+        <FaStar />
+        <FaStar />
+        <FaStar />
+ 
+          </div>
+      <p className="mt-10">
+      <Link href ={`/Products/${item.id}`}> <Button/></Link>
+        </p>
+        
     </div>
   ))}
  
@@ -82,6 +101,7 @@ const Productpage = () =>{
  </div>
  
 </div>
+
     
 
 
