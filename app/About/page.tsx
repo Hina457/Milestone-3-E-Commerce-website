@@ -37,15 +37,15 @@ export default function About() {
         <div className="flex-1 bg-pink-200 shadow-2xl p-6 rounded-lg">
           <h1 className="text-3xl font-bold text-center mb-4 font-serif">About Us!</h1>
           <p className="font-serif text-justify leading-6 text-gray-800">
-            Welcome to Alvi Store, your one-stop destination for all your shopping needs. 
+            Welcome to Alvi Store your one-stop destination for all your shopping needs. 
             We are committed to providing you with an exceptional shopping experience by 
             offering a wide range of high-quality products at competitive prices. At Alvi 
-            Store, we prioritize customer satisfaction by ensuring fast and reliable service, 
-            secure payment methods, and prompt delivery. Whether you're looking for the latest 
-            trends, everyday essentials, or unique finds, we aim to make your shopping journey 
+            Store we prioritize customer satisfaction by ensuring fast and reliable service, 
+            secure payment methods and prompt delivery Whether youre looking for the latest 
+            trends everyday essentials, or unique finds we aim to make your shopping journey 
             seamless and enjoyable. Thank you for choosing Alvi Store, where quality meets 
-            convenience! Our store is designed to cater to a diverse range of needs, whether 
-            you're shopping for the latest fashion trends, home essentials, tech gadgets, or 
+            convenience! Our store is designed to cater to a diverse range of needs whether 
+            youre shopping for the latest fashion trends home essentials tech gadget or 
             unique gifts. We take pride in curating a collection of premium products from 
             reliable brands, ensuring that every item meets the highest standards of quality 
             and functionality.
